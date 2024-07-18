@@ -52,6 +52,8 @@
     }
 
     &__menu {
+        background-color: var(--header-menu-bg);
+
         @media (max-width: 89.98em) {
             display: none;
             position: absolute;
