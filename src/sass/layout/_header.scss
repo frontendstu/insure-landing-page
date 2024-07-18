@@ -74,6 +74,7 @@
 
             letter-spacing: var(--header-menu-tracking);
             font-size: var(--header-menu-fs);
+            font-weight: var(--header-menu-fw);
             text-transform: uppercase;
 
             @media (max-width: 89.99em) {
