@@ -27,6 +27,11 @@
     --fw-regular: 400;
     --fw-bold: 700;
 
+    // ---------- COPY
+    --copy-clr: hsl(var(--clr-neutral-500));
+    --copy-ff: 'Karla', var(--ff-sans-serif);
+    --copy-fs: var(--fs-200);
+
     // ---------- UTILITIES
 
     // ----- Container
