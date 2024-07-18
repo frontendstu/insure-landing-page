@@ -13,6 +13,17 @@
         'Helvetica Neue', Arial, sans-serif;
     --ff-serif: Georgia, 'Times New Roman', Times, serif;
 
+    --fs-100: 0.8125rem; // 13px
+    --fs-200: 1rem; // 16px
+    --fs-300: 1.25rem; // 20px
+    --fs-400: 2.5rem; // 40px
+    --fs-500: 3rem; // 48px
+
+    @media (min-width: 90em) {
+        --fs-400: 3.5rem; // 56px
+        --fs-500: 4.5rem; // 72px
+    }
+
     // ---------- UTILITIES
 
     // ----- Container
