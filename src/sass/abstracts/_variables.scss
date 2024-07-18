@@ -63,6 +63,8 @@
     --header-branding-opacity-hover: 0.5;
 
     --header-menu-pos-top: 4rem;
+    --header-menu-tracking: 1.5px;
+    --header-menu-fs: var(--fs-300);
 
     @media (min-width: 48em) {
         --header-padding-block: 2rem;
