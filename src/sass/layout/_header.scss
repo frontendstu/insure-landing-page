@@ -72,6 +72,10 @@
         &-items {
             --menu-gap: 1rem;
 
+            letter-spacing: var(--header-menu-tracking);
+            font-size: var(--header-menu-fs);
+            text-transform: uppercase;
+
             @media (max-width: 89.99em) {
                 li {
                     margin-block: var(--menu-gap);
