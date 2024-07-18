@@ -9,3 +9,18 @@ body {
     font-family: var(--copy-ff);
     font-size: var(--copy-fs);
 }
+
+/* ------------------------------- */
+/* Links                           */
+/* ------------------------------- */
+
+a {
+    transition: var(--link-transition);
+    color: var(--link-clr);
+    text-decoration: var(--link-decoration);
+
+    @include mixin.hover-focus {
+        color: var(--link-clr-hover);
+        text-decoration: var(--link-decoration-hover);
+    }
+}
