@@ -78,6 +78,8 @@
 
             @media (max-width: 89.99em) {
                 li {
+                    --menu-gap: 2rem;
+
                     margin-block: var(--menu-gap);
                     text-align: center;
                 }
