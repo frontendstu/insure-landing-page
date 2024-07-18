@@ -53,6 +53,10 @@
 
     // ----- Header
     --header-padding-block: 1.5rem;
+
+    --header-branding-transition: opacity 250ms ease-in-out;
+    --header-branding-opacity-hover: 0.5;
+
     --header-menu-pos-top: 4rem;
 
     @media (min-width: 48em) {
