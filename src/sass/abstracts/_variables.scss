@@ -83,6 +83,7 @@
     --header-menu-fw: var(--fw-bold);
 
     @media (max-width: 89.98em) {
+        --header-menu-height: 31.25rem;
         --header-menu-padding-top: 0.5rem;
         --header-menu-padding-inline: 1.5rem;
         --header-menu-item-clr: hsl(var(--clr-neutral-100));
