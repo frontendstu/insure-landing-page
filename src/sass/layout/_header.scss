@@ -77,6 +77,18 @@
                 display: block;
                 top: var(--header-menu-pos-top);
             }
+
+            &::after {
+                content: '';
+                background-image: url('../assets/images/bg-pattern-mobile-nav.svg');
+                background-repeat: no-repeat;
+                background-position: bottom;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
         }
 
         @media (min-width: 90em) {
