@@ -46,7 +46,7 @@
             }
         }
 
-        @media (max-width: 89.98em) {
+        @media (max-width: 47.99em) {
             display: block;
         }
     }
@@ -54,7 +54,7 @@
     &__menu {
         background-color: var(--header-menu-bg);
 
-        @media (max-width: 89.98em) {
+        @media (max-width: 47.99em) {
             display: none;
             position: absolute;
             left: 0;
@@ -91,7 +91,7 @@
             }
         }
 
-        @media (min-width: 90em) {
+        @media (min-width: 48em) {
             margin-inline: unset;
         }
 
@@ -103,7 +103,7 @@
             font-weight: var(--header-menu-fw);
             text-transform: uppercase;
 
-            @media (max-width: 89.99em) {
+            @media (max-width: 47.99em) {
                 li {
                     --menu-gap: 2rem;
 
@@ -112,7 +112,7 @@
                 }
             }
 
-            @media (min-width: 90em) {
+            @media (min-width: 48em) {
                 display: inline-flex;
                 align-items: center;
                 gap: var(--menu-gap);
