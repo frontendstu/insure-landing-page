@@ -57,8 +57,19 @@
         @media (max-width: 89.98em) {
             display: none;
             position: absolute;
-            width: 100%;
             left: 0;
+            width: 100%;
+            height: 36.625rem;
+            padding-top: var(--header-menu-padding-top);
+            padding-inline: var(--header-menu-padding-inline);
+
+            a {
+                color: var(--header-menu-item-clr);
+            }
+
+            .btn {
+                border-color: var(--header-menu-btn-border-clr);
+            }
 
             &[data-visible] {
                 @include mixin.flex;
