@@ -82,6 +82,13 @@
     --header-menu-fs: var(--fs-300);
     --header-menu-fw: var(--fw-bold);
 
+    @media (max-width: 89.98em) {
+        --header-menu-padding-top: 0.5rem;
+        --header-menu-padding-inline: 1.5rem;
+        --header-menu-item-clr: hsl(var(--clr-neutral-100));
+        --header-menu-item-btn-border-clr: var(--header-menu-item-clr);
+    }
+
     @media (min-width: 90em) {
         --header-menu-bg: hsl(var(--clr-neutral-100));
         --header-menu-fs: var(--fs-100);
