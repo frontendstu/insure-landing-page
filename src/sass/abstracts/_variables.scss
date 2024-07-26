@@ -32,6 +32,15 @@
     --copy-ff: 'Karla', var(--ff-sans-serif);
     --copy-fs: var(--fs-200);
 
+    // ---------- HEADING
+    --heading-tracking: -0.67px;
+    --heading-fw: var(--fw-bold);
+    --heading-ff: var(--ff-serif);
+
+    @media (min-width: 48em) {
+        --heading-tracking: -1px;
+    }
+
     // ---------- LINKS
     --link-transition: color 200ms ease-in-out;
     --link-clr: var(--copy-clr);
