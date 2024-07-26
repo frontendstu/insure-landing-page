@@ -39,5 +39,6 @@
 
     &__img {
         transform: var(--hero-img-transform);
+        z-index: 1;
     }
 }
