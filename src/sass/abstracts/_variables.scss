@@ -35,7 +35,7 @@
     // ---------- HEADING
     --heading-tracking: -0.67px;
     --heading-fw: var(--fw-bold);
-    --heading-ff: var(--ff-serif);
+    --heading-ff: 'DM Serif Display', var(--ff-serif);
 
     @media (min-width: 48em) {
         --heading-tracking: -1px;
