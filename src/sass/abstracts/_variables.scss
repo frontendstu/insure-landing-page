@@ -68,6 +68,12 @@
     --btn-clr: hsl(var(--clr-neutral-800));
     --btn-clr-hover: hsl(var(--clr-neutral-100));
 
+    --btn-on-dark-border-clr: hsl(var(--clr-neutral-100));
+    --btn-on-dark-bg: transparent;
+    --btn-on-dark-clr: hsl(var(--clr-neutral-100));
+    --btn-on-dark-bg-active: hsl(var(--clr-neutral-800));
+    --btn-on-dark-clr-active: hsl(var(--clr-neutral-100));
+
     // ---------- LAYOUT
 
     // ----- Header
