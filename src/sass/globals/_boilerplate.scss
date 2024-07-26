@@ -15,6 +15,7 @@ body {
 /* ------------------------------- */
 
 .heading {
+    line-height: var(--heading-leading);
     letter-spacing: var(--heading-tracking);
     font-weight: var(--heading-fw);
     font-family: var(--heading-ff);
