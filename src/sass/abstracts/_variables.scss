@@ -85,6 +85,32 @@
     --btn-on-dark-bg-active: hsl(var(--clr-neutral-100));
     --btn-on-dark-clr-active: hsl(var(--clr-neutral-800));
 
+    // ----- Hero
+    --hero-bg: hsl(var(--clr-primary));
+    --hero-clr: hsl(var(--clr-neutral-100));
+
+    --hero-content-gap: 1rem;
+    --hero-content-max-width: 20.4375rem;
+    --hero-content-padding-block: 5.8125rem;
+    --hero-content-leading: 1.625em;
+    --hero-content-btn-margin-top: 2rem;
+    --hero-content-heading-fs: var(--fs-500);
+
+    @media (min-width: 48em) {
+        --hero-content-gap: 1.5rem;
+        --hero-content-max-width: 25rem;
+        --hero-content-padding-block: 0;
+        --hero-content-padding-inline: 1rem;
+        --hero-content-btn-margin-top: 1.625rem;
+        --hero-img-transform: 0;
+    }
+
+    @media (min-width: 90em) {
+        --hero-content-max-width: 33.75rem;
+        --hero-content-padding-inline: 0 2.125rem;
+        --hero-img-transform: translateY(6.5625rem);
+    }
+
     // ---------- LAYOUT
 
     // ----- Header
