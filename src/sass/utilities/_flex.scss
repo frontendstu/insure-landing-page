@@ -1,1 +1,5 @@
 @use '../abstracts/mixins' as mixin;
+
+.flex {
+    display: flex;
+}
