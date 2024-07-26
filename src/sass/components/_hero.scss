@@ -1,1 +1,43 @@
 @use '../abstracts/mixins' as mixin;
+
+.hero {
+    background-color: var(--hero-bg);
+    color: var(--hero-clr);
+
+    &__wrapper {
+        @include mixin.flex;
+
+        @media (min-width: 48em) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__content {
+        @include mixin.flex;
+
+        gap: var(--hero-content-gap);
+        max-width: var(--hero-content-max-width);
+        padding-block: var(--hero-content-padding-block);
+        line-height: 26px;
+        text-align: center;
+
+        .heading {
+            font-size: var(--hero-content-heading-fs);
+        }
+
+        .btn {
+            margin-top: var(--hero-content-btn-margin-top);
+        }
+
+        @media (min-width: 48em) {
+            align-items: flex-start;
+            gap: var(--hero-content-gap);
+            padding-inline: var(--hero-content-padding-inline);
+            text-align: left;
+        }
+    }
+
+    &__img {
+        transform: var(--hero-img-transform);
+    }
+}
