@@ -52,6 +52,7 @@
     }
 
     &__menu {
+        z-index: 999;
         background-color: var(--header-menu-bg);
 
         @media (max-width: 47.99em) {
