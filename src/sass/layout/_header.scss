@@ -7,6 +7,10 @@
 .header {
     padding-block: var(--header-padding-block);
 
+    &__no-scroll {
+        overflow: hidden;
+    }
+
     &__wrapper {
         @include mixin.flex($direction: row);
         justify-content: space-between;
