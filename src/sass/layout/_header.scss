@@ -57,12 +57,14 @@
 
         @media (max-width: 47.99em) {
             display: none;
-            position: absolute;
+            position: fixed;
             left: 0;
+            top: 0;
             width: 100%;
-            height: var(--header-menu-height);
+            height: 100vh;
             padding-top: var(--header-menu-padding-top);
             padding-inline: var(--header-menu-padding-inline);
+            overflow: hidden;
 
             a {
                 color: var(--header-menu-item-clr);
@@ -85,7 +87,7 @@
                 background-repeat: no-repeat;
                 background-position: bottom;
                 position: absolute;
-                top: 0;
+                top: -6rem;
                 left: 0;
                 width: 100%;
                 height: 100%;
