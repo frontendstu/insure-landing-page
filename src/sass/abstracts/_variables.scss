@@ -23,11 +23,6 @@
     --fs-400: 2.5rem; // 40px
     --fs-500: 3rem; // 48px
 
-    @media (min-width: 90em) {
-        --fs-400: 3.5rem; // 56px
-        --fs-500: 4.5rem; // 72px
-    }
-
     --fw-regular: 400;
     --fw-bold: 700;
 
@@ -41,10 +36,6 @@
     --heading-tracking: -0.67px;
     --heading-fw: var(--fw-bold);
     --heading-ff: 'DM Serif Display', var(--ff-serif);
-
-    @media (min-width: 48em) {
-        --heading-tracking: -1px;
-    }
 
     // ---------- LINKS
     --link-transition: color 200ms ease-in-out;
@@ -60,15 +51,6 @@
     // ----- Container
     --container-max-width: 21.375rem;
     --container-padding-inline: 0.25rem;
-
-    @media (min-width: 48em) {
-        --container-max-width: 43rem;
-    }
-
-    @media (min-width: 90em) {
-        --container-max-width: 69.375rem;
-        --container-padding-inline: 0.5rem;
-    }
 
     // ---------- COMPONENTS
 
@@ -100,21 +82,6 @@
     --hero-content-btn-margin-top: 2rem;
     --hero-content-heading-fs: var(--fs-500);
 
-    @media (min-width: 48em) {
-        --hero-content-gap: 1.5rem;
-        --hero-content-max-width: 25rem;
-        --hero-content-padding-block: 0;
-        --hero-content-padding-inline: 1rem;
-        --hero-content-btn-margin-top: 1.625rem;
-        --hero-img-transform: 0;
-    }
-
-    @media (min-width: 90em) {
-        --hero-content-max-width: 33.75rem;
-        --hero-content-padding-inline: 0 2.125rem;
-        --hero-img-transform: translateY(6.5625rem);
-    }
-
     // ---------- LAYOUT
 
     // ----- Header
@@ -129,7 +96,8 @@
     --header-menu-fs: var(--fs-300);
     --header-menu-fw: var(--fw-bold);
 
-    @media (max-width: 47.99em) {
+    // ---------- MEDIA QUERIES
+    @media (max-width: 47.98em) {
         --header-menu-height: 31.25rem;
         --header-menu-padding-top: 0.5rem;
         --header-menu-padding-inline: 1.5rem;
@@ -138,7 +106,29 @@
     }
 
     @media (min-width: 48em) {
+        --heading-tracking: -1px;
+
+        --container-max-width: 43rem;
+
+        --hero-content-gap: 1.5rem;
+        --hero-content-max-width: 25rem;
+        --hero-content-padding-block: 0;
+        --hero-content-padding-inline: 1rem;
+        --hero-content-btn-margin-top: 1.625rem;
+        --hero-img-transform: 0;
         --header-menu-bg: hsl(var(--clr-neutral-100));
         --header-menu-fs: var(--fs-100);
+    }
+
+    @media (min-width: 90em) {
+        --fs-400: 3.5rem; // 56px
+        --fs-500: 4.5rem; // 72px
+
+        --container-max-width: 69.375rem;
+        --container-padding-inline: 0.5rem;
+
+        --hero-content-max-width: 33.75rem;
+        --hero-content-padding-inline: 0 2.125rem;
+        --hero-img-transform: translateY(6.5625rem);
     }
 }
