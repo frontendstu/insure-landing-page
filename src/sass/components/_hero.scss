@@ -21,6 +21,15 @@
         }
     }
 
+    &::before {
+        top: var(--hero-pattern-left-pos-top);
+        left: var(--hero-pattern-left-pos-left);
+        width: var(--hero-pattern-left-bg-img-width);
+        height: var(--hero-pattern-left-bg-img-height);
+        background-position: var(--hero-pattern-left-bg-img-pos);
+        background-image: var(--hero-pattern-left-bg-img-url);
+    }
+
     &__wrapper {
         @include mixin.flex;
 
