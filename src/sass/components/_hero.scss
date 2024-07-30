@@ -9,6 +9,14 @@
     background-color: var(--hero-bg);
     color: var(--hero-clr);
 
+    &::before,
+    &::after {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+    }
+
     &__wrapper {
         @include mixin.flex;
 
