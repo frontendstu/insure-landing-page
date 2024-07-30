@@ -82,6 +82,13 @@
     --hero-pattern-left-bg-img-pos: left;
     --hero-pattern-left-bg-img-url: url('../assets/images/bg-pattern-intro-left-mobile.svg');
 
+    --hero-pattern-right-pos-bottom: -11.75rem;
+    --hero-pattern-right-pos-right: 0;
+    --hero-pattern-right-bg-img-width: 23.5625rem;
+    --hero-pattern-right-bg-img-height: 22rem;
+    --hero-pattern-right-bg-img-pos: right;
+    --hero-pattern-right-bg-img-url: url('../assets/images/bg-pattern-intro-right-mobile.svg');
+
     --hero-content-gap: 1rem;
     --hero-content-max-width: 20.4375rem;
     --hero-content-padding-block: 5.8125rem;
@@ -142,5 +149,10 @@
         --hero-pattern-left-bg-img-width: 43.5625rem;
         --hero-pattern-left-bg-img-height: 40.5625rem;
         --hero-pattern-left-bg-img-url: url('../assets/images/bg-pattern-intro-left-desktop.svg');
+
+        --hero-pattern-right-pos-bottom: 3rem;
+        --hero-pattern-right-bg-img-width: 43.5625rem;
+        --hero-pattern-right-bg-img-height: 40.5625rem;
+        --hero-pattern-right-bg-img-url: url('../assets/images/bg-pattern-intro-right-desktop.svg');
     }
 }
