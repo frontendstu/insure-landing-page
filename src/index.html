@@ -14,94 +14,100 @@
         <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
-        <header class="header">
-            <div class="container">
-                <div class="header__wrapper">
-                    <div class="header__branding">
-                        <a href="#">
+        <div class="overflow-hide-x">
+            <header class="header">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <div class="header__branding">
+                            <a href="#">
+                                <img
+                                    src="assets/images/logo.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                />
+                                <span class="sr-only">Insure</span>
+                            </a>
+                        </div>
+
+                        <button
+                            class="header__toggle"
+                            aria-controls="header-nav"
+                            aria-expanded="false"
+                        >
                             <img
-                                src="assets/images/logo.svg"
+                                src="assets/images/icon-hamburger.svg"
                                 alt=""
                                 aria-hidden="true"
+                                class="menu-open-icon"
                             />
-                            <span class="sr-only">Insure</span>
-                        </a>
-                    </div>
 
-                    <button
-                        class="header__toggle"
-                        aria-controls="header-nav"
-                        aria-expanded="false"
-                    >
-                        <img
-                            src="assets/images/icon-hamburger.svg"
-                            alt=""
-                            aria-hidden="true"
-                            class="menu-open-icon"
-                        />
-
-                        <img
-                            src="assets/images/icon-close.svg"
-                            alt=""
-                            aria-hidden="true"
-                            class="menu-close-icon"
-                        />
-                        <span class="sr-only">Menu</span>
-                    </button>
-
-                    <nav class="header__menu" id="header-nav">
-                        <ul
-                            role="list"
-                            class="header__menu-items"
-                            style="--menu-gap: 1.375rem"
-                        >
-                            <li><a href="#">How we work</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Account</a></li>
-                            <li><a class="btn" href="#">View plans</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-
-        <main>
-            <section class="hero">
-                <div class="hero__wrapper">
-                    <div class="hero__img">
-                        <picture>
-                            <source
-                                media="(min-width: 90em)"
-                                srcset="assets/images/image-intro-desktop.jpg"
-                            />
-                            <source
-                                media="(min-width: 48em)"
-                                srcset="assets/images/image-intro-mobile.jpg"
-                            />
                             <img
-                                src="assets/images/image-intro-mobile.jpg"
-                                alt="Description of the image"
+                                src="assets/images/icon-close.svg"
+                                alt=""
+                                aria-hidden="true"
+                                class="menu-close-icon"
                             />
-                        </picture>
-                    </div>
+                            <span class="sr-only">Menu</span>
+                        </button>
 
-                    <div class="hero__content">
-                        <h1 class="heading">Humanizing your insurance.</h1>
-
-                        <p>
-                            Get your life insurance coverage easier and faster.
-                            We blend our expertise and technology to help you
-                            find the plan that's right for you. Ensure you and
-                            your loved ones are protected.
-                        </p>
-
-                        <a href="#" class="btn" data-btn-style="on-dark">
-                            View plans
-                        </a>
+                        <nav class="header__menu" id="header-nav">
+                            <ul
+                                role="list"
+                                class="header__menu-items"
+                                style="--menu-gap: 1.375rem"
+                            >
+                                <li><a href="#">How we work</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Account</a></li>
+                                <li><a class="btn" href="#">View plans</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-            </section>
-        </main>
+            </header>
+
+            <main>
+                <section class="hero">
+                    <div class="hero__wrapper">
+                        <div class="hero__img">
+                            <picture>
+                                <source
+                                    media="(min-width: 90em)"
+                                    srcset="
+                                        assets/images/image-intro-desktop.jpg
+                                    "
+                                />
+                                <source
+                                    media="(min-width: 48em)"
+                                    srcset="
+                                        assets/images/image-intro-mobile.jpg
+                                    "
+                                />
+                                <img
+                                    src="assets/images/image-intro-mobile.jpg"
+                                    alt="Description of the image"
+                                />
+                            </picture>
+                        </div>
+
+                        <div class="hero__content">
+                            <h1 class="heading">Humanizing your insurance.</h1>
+
+                            <p>
+                                Get your life insurance coverage easier and
+                                faster. We blend our expertise and technology to
+                                help you find the plan that's right for you.
+                                Ensure you and your loved ones are protected.
+                            </p>
+
+                            <a href="#" class="btn" data-btn-style="on-dark">
+                                View plans
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
 
         <script src="js/scripts.js"></script>
     </body>
