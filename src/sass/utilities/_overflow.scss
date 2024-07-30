@@ -2,6 +2,12 @@
 /* Overflow                        */
 /* ------------------------------- */
 
+.overflow-hide,
+.overflow-hide-y,
+.overflow-hide-x {
+    position: relative;
+}
+
 .overflow-hide {
     overflow: hidden;
 }
