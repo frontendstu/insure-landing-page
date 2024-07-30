@@ -30,6 +30,15 @@
         background-image: var(--hero-pattern-left-bg-img-url);
     }
 
+    &::after {
+        bottom: var(--hero-pattern-right-pos-bottom);
+        right: var(--hero-pattern-right-pos-right);
+        width: var(--hero-pattern-right-bg-img-width);
+        height: var(--hero-pattern-right-bg-img-height);
+        background-position: var(--hero-pattern-right-bg-img-pos);
+        background-image: var(--hero-pattern-right-bg-img-url);
+    }
+
     &__wrapper {
         @include mixin.flex;
 
