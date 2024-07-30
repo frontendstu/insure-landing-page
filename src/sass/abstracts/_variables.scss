@@ -101,6 +101,7 @@
 
     // ----- Header
     --header-padding-block: 2rem;
+    --header-bg-clr: hsl(var(--clr-neutral-100));
 
     --header-branding-transition: opacity 250ms ease-in-out;
     --header-branding-opacity-hover: 0.5;
