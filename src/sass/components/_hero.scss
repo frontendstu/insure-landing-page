@@ -37,6 +37,7 @@
         height: var(--hero-pattern-right-bg-img-height);
         background-position: var(--hero-pattern-right-bg-img-pos);
         background-image: var(--hero-pattern-right-bg-img-url);
+        z-index: 1;
     }
 
     &__wrapper {
