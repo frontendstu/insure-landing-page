@@ -35,3 +35,13 @@ a {
         text-decoration: var(--link-decoration-hover);
     }
 }
+
+/* ------------------------------- */
+/* Horizontal Rule                 */
+/* ------------------------------- */
+
+hr {
+    width: var(--hr-width);
+    border: 0;
+    border-top: var(--hr-border-top);
+}
