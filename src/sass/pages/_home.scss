@@ -1,1 +1,60 @@
 @use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Home                            */
+/* ------------------------------- */
+
+/* FEATURES */
+.features {
+    margin-block: var(--feat-margin-block);
+    text-align: var(--feat-text-align);
+
+    hr {
+        margin-inline: var(--feat-hr-margin-inline);
+    }
+
+    .heading {
+        color: var(--feat-heading-clr);
+    }
+
+    h2 {
+        margin-top: var(--feat-h2-margin-top);
+        letter-spacing: var(--feat-h2-tracking);
+        font-size: var(--feat-h2-fs);
+    }
+
+    h3 {
+        letter-spacing: var(--feat-h3-tracking);
+        font-size: var(--feat-h3-fs);
+    }
+
+    img {
+        margin-inline: var(--feat-img-margin-inline);
+    }
+
+    &__item {
+        max-width: var(--feat-item-max-width);
+        margin-top: var(--feat-item-margin-top);
+        margin-inline: auto;
+
+        .heading {
+            margin-top: var(--feat-item-heading-margin-top);
+        }
+
+        p {
+            margin-top: var(--feat-item-para-margin-top);
+            line-height: var(--feat-item-para-leading);
+        }
+
+        &:first-child {
+            margin-top: var(--feat-item-margin-top-first);
+        }
+
+        &-container {
+            @media (min-width: 90em) {
+                display: flex;
+                gap: var(--feat-item-container-gap);
+            }
+        }
+    }
+}
