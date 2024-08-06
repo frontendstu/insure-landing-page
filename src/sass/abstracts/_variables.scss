@@ -117,6 +117,35 @@
     --header-menu-fs: var(--fs-300);
     --header-menu-fw: var(--fw-bold);
 
+    // ---------- PAGES
+
+    // ----- Home
+
+    // --- Features
+    --feat-margin-block: 8.75rem;
+    --feat-text-align: center;
+
+    --feat-hr-margin-inline: auto;
+
+    --feat-heading-clr: hsl(var(--clr-neutral-800));
+
+    --feat-h2-margin-top: 2.5rem;
+    --feat-h2-tracking: -0.67px;
+    --feat-h2-fs: var(--fs-500);
+
+    --feat-h3-tracking: -0.39px;
+    --feat-h3-fs: var(--fs-350);
+
+    --feat-img-margin-inline: auto;
+
+    --feat-item-max-width: auto;
+    --feat-item-margin-top: 3.5rem;
+    --feat-item-margin-top-first: 5rem;
+    --feat-item-heading-margin-top: 2rem;
+
+    --feat-item-para-margin-top: 1rem;
+    --feat-item-para-leading: 1.75em;
+
     // ---------- MEDIA QUERIES
     @media (max-width: 47.98em) {
         --header-menu-height: 31.25rem;
@@ -162,5 +191,17 @@
         --hero-pattern-right-bg-img-width: 43.5625rem;
         --hero-pattern-right-bg-img-height: 40.5625rem;
         --hero-pattern-right-bg-img-url: url('../assets/images/bg-pattern-intro-right-desktop.svg');
+
+        --feat-margin-block: 9.375rem;
+        --feat-text-align: left;
+        --feat-hr-margin-inline: unset;
+        --feat-h2-margin-top: 3.9375rem;
+        --feat-h2-tracking: -1px;
+        --feat-img-margin-inline: unset;
+
+        --feat-item-max-width: 21.875rem;
+        --feat-item-margin-top: 6rem;
+        --feat-item-margin-top-first: var(--feat-item-margin-top);
+        --feat-item-container-gap: 1.875rem;
     }
 }
