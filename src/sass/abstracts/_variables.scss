@@ -39,7 +39,7 @@
     --heading-ff: 'DM Serif Display', var(--ff-serif);
 
     // ---------- LINKS
-    --link-transition: color 200ms ease-in-out;
+    --link-transition: color 200ms ease-in-out, fill 150ms ease-in-out;
     --link-clr: var(--copy-clr);
     --link-clr-hover: hsl(var(--clr-neutral-800));
     --link-clr-active: var(--link-clr-hover);
