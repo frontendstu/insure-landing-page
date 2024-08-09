@@ -1,1 +1,107 @@
 @use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Footer                          */
+/* ------------------------------- */
+
+.footer {
+    position: relative;
+    padding-block: var(--footer-padding-block);
+    margin-top: var(--footer-margin-top);
+    background-color: var(--footer-bg-clr);
+    z-index: 999;
+    overflow: hidden;
+
+    hr {
+        width: 100%;
+        margin-block: var(--footer-hr-margin-block);
+        border-color: var(--footer-hr-border-clr);
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: var(--footer-grid-cols);
+        gap: var(--footer-grid-gap);
+    }
+
+    &__branding {
+        @include mixin.flex;
+    }
+
+    &__socials {
+        &-items {
+            @include mixin.flex(
+                $direction: row,
+                $gap: var(--footer-socials-items-gap)
+            );
+
+            a {
+                fill: var(--footer-socials-items-fill);
+
+                @include mixin.hover-focus {
+                    fill: var(--footer-socials-items-fill-active);
+                }
+            }
+        }
+    }
+
+    &__nav {
+        display: grid;
+        grid-template-columns: var(--footer-nav-grid-cols);
+        gap: var(--footer-nav-gap);
+        letter-spacing: var(--footer-nav-tracking);
+        font-weight: var(--footer-nav-fw);
+        font-size: var(--footer-nav-fs);
+        text-transform: var(--footer-nav-text-transform);
+        text-align: var(--footer-nav-text-align);
+
+        strong {
+            display: block;
+            margin-bottom: var(--footer-nav-strong-margin-bottom);
+        }
+
+        &-items {
+            @include mixin.flex($gap: var(--footer-nav-items-gap));
+
+            a {
+                color: var(--footer-nav-items-clr);
+
+                @include mixin.hover-focus {
+                    text-decoration: var(--footer-nav-items-decoration-active);
+                }
+            }
+        }
+    }
+
+    &::before {
+        position: absolute;
+        top: var(--footer-bg-pattern-pos-top);
+        left: var(--footer-bg-pattern-pos-left);
+        width: var(--footer-bg-pattern-width);
+        height: var(--footer-bg-pattern-height);
+        background-image: var(--footer-bg-pattern-img-url);
+        background-repeat: no-repeat;
+        z-index: -1;
+        content: '';
+    }
+}
+
+@media (min-width: 48em) {
+    .footer {
+        &::before {
+            background-size: contain;
+        }
+    }
+
+    .footer__branding {
+        margin-right: auto;
+    }
+
+    .footer__socials {
+        margin-left: auto;
+    }
+
+    .footer__nav-items {
+        align-items: unset;
+    }
+}
