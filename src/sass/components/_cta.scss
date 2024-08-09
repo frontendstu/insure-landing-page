@@ -1,1 +1,57 @@
 @use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Call to Action                  */
+/* ------------------------------- */
+
+.cta {
+    --btn-padding: var(--cta-btn-padding);
+
+    position: relative;
+    overflow: hidden;
+    padding-block: var(--cta-padding-block);
+    background-color: var(--cta-bg-clr);
+    color: var(--cta-clr);
+
+    &__content {
+        @include mixin.flex($gap: var(--cta-content-gap));
+
+        max-width: var(--cta-content-max-width);
+
+        .btn {
+            z-index: 999;
+        }
+
+        .heading {
+            max-width: var(--cta-content-heading-max-width);
+            z-index: 999;
+            letter-spacing: var(--cta-content-tracking);
+            font-size: var(--cta-content-heading-fs);
+            text-align: var(--cta-content-heading-text-align);
+        }
+    }
+
+    &::after {
+        position: absolute;
+        top: var(--cta-bg-pos-top);
+        right: var(--cta-bg-pos-right);
+        width: var(--cta-bg-width);
+        height: var(--cta-bg-height);
+        z-index: 1;
+        background-image: var(--cta-bg-pattern-img-url);
+        background-repeat: no-repeat;
+        background-size: var(--cta-bg-pattern-size);
+        content: '';
+    }
+}
+
+@media (min-width: 90em) {
+    .cta__content {
+        flex-direction: row;
+        margin-inline: auto;
+
+        .heading {
+            margin-right: auto;
+        }
+    }
+}
