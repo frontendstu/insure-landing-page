@@ -137,6 +137,40 @@
     --header-menu-fs: var(--fs-300);
     --header-menu-fw: var(--fw-bold);
 
+    // ----- Footer
+    --footer-padding-block: 5.5rem;
+    --footer-margin-top: 8.75rem;
+    --footer-bg-clr: hsl(var(--clr-neutral-150));
+
+    --footer-bg-pattern-pos-top: 0;
+    --footer-bg-pattern-pos-left: 0;
+    --footer-bg-pattern-width: 43.5625rem;
+    --footer-bg-pattern-height: 40.5625rem;
+    --footer-bg-pattern-img-url: url('../assets/images/bg-pattern-footer-mobile.svg');
+
+    --footer-hr-margin-block: 2.5rem;
+    --footer-hr-border-clr: hsl(0 0% 86%);
+
+    --footer-grid-cols: repeat(1, minmax(0, 1fr));
+    --footer-grid-gap: 2rem;
+
+    --footer-socials-items-gap: 1rem;
+    --footer-socials-items-fill: hsl(var(--clr-neutral-500));
+    --footer-socials-items-fill-active: hsl(var(--clr-neutral-800));
+
+    --footer-nav-grid-cols: repeat(1, minmax(0, 1fr));
+    --footer-nav-gap: 2.5rem;
+    --footer-nav-tracking: 1.5px;
+    --footer-nav-fw: var(--fw-bold);
+    --footer-nav-fs: var(--fs-100);
+    --footer-nav-text-transform: uppercase;
+    --footer-nav-text-align: center;
+    --footer-nav-strong-margin-bottom: 2.25rem;
+
+    --footer-nav-items-gap: 1rem;
+    --footer-nav-items-clr: hsl(var(--clr-neutral-800));
+    --footer-nav-items-decoration-active: underline;
+
     // ---------- PAGES
 
     // ----- Home
@@ -188,6 +222,21 @@
         --hero-img-transform: 0;
         --header-menu-bg: hsl(var(--clr-neutral-100));
         --header-menu-fs: var(--fs-100);
+
+        --footer-padding-block: 4rem;
+        --footer-margin-top: 9.375rem;
+
+        --footer-hr-margin-block: 2.25rem;
+
+        --footer-bg-pattern-pos-top: -0.5rem;
+        --footer-bg-pattern-pos-left: -1rem;
+        --footer-bg-pattern-img-url: url('../assets/images/bg-pattern-footer-desktop.svg');
+
+        --footer-grid-cols: repeat(2, minmax(0, 1fr));
+        --footer-grid-gap: 0;
+
+        --footer-nav-grid-cols: repeat(4, minmax(0, 1fr));
+        --footer-nav-text-align: left;
     }
 
     @media (min-width: 90em) {
