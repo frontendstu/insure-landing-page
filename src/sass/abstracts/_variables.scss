@@ -28,12 +28,12 @@
     // ---------- BOILERPLATE
 
     // ----- Copy
-    --copy-clr: inherit;
-    --copy-fs: inherit;
-    --copy-fw: inherit;
-    --copy-ff: inherit;
-    --copy-font: inherit;
-    --copy-leading: inherit;
+    --copy-clr: hsl(var(--clr-neutral-500));
+    --copy-fw: var(--fw-regular);
+    --copy-fs: var(--fs-200);
+    --copy-ff: var(--ff-karla);
+    --copy-font: var(--copy-fw) var(--copy-fs) var(--copy-ff);
+    --copy-leading: 1.625em;
 
     // ----- Links
     --link-transition: inherit;
