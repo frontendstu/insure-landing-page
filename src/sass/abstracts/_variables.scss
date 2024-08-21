@@ -65,6 +65,11 @@
     --btn-tracking: 1.5px;
     --btn-case: uppercase;
 
+    --btn-on-dark-border-clr: hsl(var(--clr-neutral-100));
+    --btn-on-dark-bg-active: hsl(var(--clr-neutral-100));
+    --btn-on-dark-clr: hsl(var(--clr-neutral-100));
+    --btn-on-dark-clr-active: hsl(var(--clr-neutral-800));
+
     // ---------- LAYOUT
 
     // ----- Header
