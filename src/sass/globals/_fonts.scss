@@ -1,1 +1,11 @@
 @use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Karla                           */
+/* ------------------------------- */
+
+@include mixin.font-face(
+    $font-family: 'Karla',
+    $font-path: '../assets/fonts/Karla/Karla-VariableFont_wght.ttf',
+    $font-weight: 400 700
+);
