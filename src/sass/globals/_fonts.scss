@@ -9,3 +9,13 @@
     $font-path: '../assets/fonts/Karla/Karla-VariableFont_wght.ttf',
     $font-weight: 400 700
 );
+
+/* ------------------------------- */
+/* DM Serif Display                */
+/* ------------------------------- */
+
+@include mixin.font-face(
+    $font-family: 'DM Serif Display',
+    $font-path: '../assets/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf',
+    $font-weight: 400 700
+);
