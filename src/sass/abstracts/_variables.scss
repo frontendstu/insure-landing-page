@@ -36,12 +36,12 @@
     --copy-leading: 1.625em;
 
     // ----- Links
-    --link-transition: inherit;
-    --link-clr: inherit;
-    --link-clr-active: inherit;
+    --link-transition: color 200ms ease-in-out, background 200ms ease-in-out;
+    --link-clr: var(--copy-clr);
+    --link-clr-active: hsl(var(--clr-neutral-800));
     --link-decoration: none;
-    --link-decoration-active: underline;
-    --link-outline: 2px solid hsl(198 93% 60%);
+    --link-decoration-active: none;
+    --link-outline: 2px solid hsl(213 94% 68%);
     --link-outline-offset: 3px;
     --link-outline-radius: 2px;
 
