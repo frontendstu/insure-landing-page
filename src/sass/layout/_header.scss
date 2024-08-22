@@ -63,6 +63,10 @@
 }
 
 @media (max-width: 47.98em) {
+    body {
+        overflow-y: hidden;
+    }
+
     .header {
         &__toggle {
             display: block;
@@ -72,12 +76,23 @@
             display: none;
             position: absolute;
             width: 100%;
-            background-color: hsl(var(--clr-neutral-800));
+            height: 100%;
 
             &[data-visible] {
-                @include mixin.flex;
+                @include mixin.flex($justify: flex-start);
 
                 top: var(--header-menu-pos-top);
+                left: 0;
+                padding-top: var(--header-menu-padding-top);
+                background-color: hsl(var(--clr-neutral-800));
+
+                a {
+                    color: var(--header-menu-items-clr);
+                }
+
+                .btn {
+                    width: var(--header-menu-items-btn-width);
+                }
             }
 
             &-items li {
