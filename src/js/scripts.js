@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const headerMenuToggle = document.querySelector('.header__toggle');
     const headerMenuNav = document.querySelector('#header-nav');
     const btn = document.querySelector('.header__menu .btn');
+    const body = document.body; // Reference to the body element
 
     // Function to update the button style based on viewport size
     function updateButtonStyle() {
@@ -33,9 +34,11 @@ document.addEventListener('DOMContentLoaded', function () {
         if (isMenuVisible) {
             headerMenuNav.removeAttribute('data-visible');
             headerMenuToggle.setAttribute('aria-expanded', 'false');
+            body.classList.remove('no-scroll'); // Enable scrolling
         } else {
             headerMenuNav.setAttribute('data-visible', '');
             headerMenuToggle.setAttribute('aria-expanded', 'true');
+            body.classList.add('no-scroll'); // Disable scrolling
         }
     });
 });
