@@ -85,6 +85,11 @@
     --header-branding-transition: opacity 200ms ease-in-out;
 
     --header-menu-pos-top: 4rem;
+    --header-menu-gap: 2.125rem;
+    --header-menu-items-fw: var(--fw-bold);
+    --header-menu-items-fs: var(--fs-300);
+    --header-menu-items-tracking: 1.36px;
+    --header-menu-items-case: uppercase;
 
     // ---------- MEDIA QUERIES
 
@@ -93,6 +98,9 @@
         --container-max-width: 43rem;
 
         --header-padding-block: 2rem;
+        --header-menu-gap: 1.625rem;
+        --header-menu-items-fs: var(--fs-100);
+        --header-menu-items-tracking: 1.5px;
     }
 
     // ----- 1440px
