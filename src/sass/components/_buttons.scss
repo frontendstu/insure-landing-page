@@ -5,6 +5,8 @@
 /* ------------------------------- */
 
 .btn {
+    @include mixin.flex;
+
     padding: var(--btn-padding);
     border-radius: var(--btn-radius);
     border: var(--btn-border);
