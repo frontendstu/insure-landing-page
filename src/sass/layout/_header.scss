@@ -99,6 +99,19 @@
                 margin-block: var(--menu-gap);
                 text-align: center;
             }
+
+            &::after {
+                @include mixin.bg-img(
+                    $bg-url: var(--header-menu-pattern-url),
+                    $bg-size: cover
+                );
+
+                width: 100%;
+                height: var(--header-menu-pattern-width);
+                position: absolute;
+                bottom: var(--header-menu-pattern-pos-bottom);
+                content: '';
+            }
         }
     }
 }
