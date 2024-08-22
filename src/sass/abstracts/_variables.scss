@@ -96,6 +96,10 @@
 
     // < 768px
     @media (max-width: 47.98em) {
+        --header-menu-pattern-pos-bottom: 5rem;
+        --header-menu-pattern-width: 20.75rem;
+        --header-menu-pattern-url: url('../assets/images/bg-pattern-mobile-nav.svg');
+
         --header-menu-items-clr: hsl(var(--clr-neutral-100));
         --header-menu-items-btn-width: 80vw;
         --header-menu-items-btn-border-clr: hsl(var(--clr-neutral-100));
