@@ -79,6 +79,11 @@
 
     // ----- Header
     --header-padding-block: 1.5rem;
+
+    --header-branding-opacity: 1;
+    --header-branding-opacity-active: 0.5;
+    --header-branding-transition: opacity 200ms ease-in-out;
+
     --header-menu-pos-top: 4rem;
 
     // ---------- MEDIA QUERIES
