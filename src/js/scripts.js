@@ -36,21 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             headerMenuNav.setAttribute('data-visible', '');
             headerMenuToggle.setAttribute('aria-expanded', 'true');
-
-            // Optional: Close menu on click outside
-            document.addEventListener('click', closeMenuOnClickOutside);
         }
     });
-
-    // Function to close the menu when clicking outside
-    function closeMenuOnClickOutside(event) {
-        if (
-            !headerMenuNav.contains(event.target) &&
-            !headerMenuToggle.contains(event.target)
-        ) {
-            headerMenuNav.removeAttribute('data-visible');
-            headerMenuToggle.setAttribute('aria-expanded', 'false');
-            document.removeEventListener('click', closeMenuOnClickOutside);
-        }
-    }
 });
