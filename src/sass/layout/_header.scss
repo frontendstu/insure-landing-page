@@ -77,7 +77,6 @@
             &[data-visible] {
                 @include mixin.flex;
 
-                display: block;
                 top: var(--header-menu-pos-top);
             }
 
