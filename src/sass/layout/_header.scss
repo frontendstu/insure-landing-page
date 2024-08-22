@@ -50,7 +50,14 @@
 
     &__menu {
         &-items {
-            --menu-gap: 1rem;
+            --menu-gap: var(--header-menu-gap);
+
+            a {
+                font-weight: var(--header-menu-items-fw);
+                font-size: var(--header-menu-items-fs);
+                letter-spacing: var(--header-menu-items-tracking);
+                text-transform: var(--header-menu-items-case);
+            }
         }
     }
 }
