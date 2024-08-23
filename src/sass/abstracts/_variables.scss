@@ -46,8 +46,8 @@
     --link-outline-radius: 2px;
 
     // ----- Heading
-    --heading-fw: inherit;
-    --heading-ff: inherit;
+    --heading-fw: var(--fw-regular);
+    --heading-ff: var(--ff-dm-serif-display);
 
     // ---------- UTILITIES
 
