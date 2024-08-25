@@ -39,3 +39,12 @@ a {
     font-weight: var(--heading-fw);
     font-family: var(--heading-ff);
 }
+
+/* ------------------------------- */
+/* Horizontal Rule                 */
+/* ------------------------------- */
+
+hr {
+    border: 0;
+    border-top: var(--hr-border);
+}
