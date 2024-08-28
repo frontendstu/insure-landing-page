@@ -3,3 +3,57 @@
 /* ------------------------------- */
 /* Hero                            */
 /* ------------------------------- */
+
+.hero {
+    background-color: var(--hero-bg);
+    color: var(--hero-clr);
+
+    .heading {
+        font-size: var(--hero-heading-fs);
+        letter-spacing: var(--hero-heading-tracking);
+        line-height: var(--hero-heading-leading);
+    }
+
+    &__wrapper {
+        @include mixin.flex;
+    }
+
+    &__content {
+        @include mixin.flex($gap: var(--hero-content-gap));
+
+        max-width: var(--hero-content-max-width);
+        padding: var(--hero-content-padding);
+        text-align: var(--hero-content-text-align);
+    }
+}
+
+@media (max-width: 47.98em) {
+    .hero {
+        &__img {
+            @include mixin.size;
+
+            img,
+            picture {
+                @include mixin.size;
+            }
+        }
+    }
+}
+
+@media (min-width: 48em) {
+    .hero {
+        &__wrapper {
+            flex-direction: row-reverse;
+            gap: var(--hero-wrapper-gap);
+        }
+
+        &__img {
+            position: relative;
+            top: var(--hero-img-pos-top);
+        }
+
+        .btn {
+            margin-right: auto;
+        }
+    }
+}
