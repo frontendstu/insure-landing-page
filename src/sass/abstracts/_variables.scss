@@ -78,6 +78,19 @@
     --btn-on-light-clr: hsl(var(--clr-neutral-800));
     --btn-on-light-clr-active: hsl(var(--clr-neutral-100));
 
+    // ----- Hero
+    --hero-bg: hsl(var(--clr-primary));
+    --hero-clr: hsl(var(--clr-neutral-100));
+
+    --hero-heading-fs: var(--fs-600);
+    --hero-heading-tracking: -0.67px;
+    --hero-heading-leading: 1;
+
+    --hero-content-gap: 2rem;
+    --hero-content-max-width: 20.4375rem;
+    --hero-content-padding: 5.8125rem 0;
+    --hero-content-text-align: center;
+
     // ---------- LAYOUT
 
     // ----- Header
@@ -117,6 +130,10 @@
         --header-menu-padding-top: 0;
         --header-menu-items-fs: var(--fs-100);
         --header-menu-items-tracking: 1.5px;
+
+        --hero-content-max-width: 25rem;
+        --hero-content-padding: 5.8125rem 2rem;
+        --hero-content-text-align: left;
     }
 
     // ----- 1440px
@@ -126,5 +143,10 @@
 
         --container-max-width: 69.375rem;
         --container-padding-inline: 0.5rem;
+
+        --hero-wrapper-gap: 2.125rem;
+        --hero-img-pos-top: 6.5625rem;
+        --hero-content-max-width: 33.5rem;
+        --hero-content-padding: 5.8125rem 0;
     }
 }
