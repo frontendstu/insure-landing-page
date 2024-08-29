@@ -81,6 +81,8 @@
     // ----- Hero
     --hero-bg: hsl(var(--clr-primary));
     --hero-clr: hsl(var(--clr-neutral-100));
+    --hero-hr-width: 9.375rem;
+    --hero-hr-border: 1px solid hsl(var(--clr-neutral-100));
 
     --hero-heading-fs: var(--fs-600);
     --hero-heading-tracking: -0.67px;
