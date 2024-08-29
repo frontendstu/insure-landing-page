@@ -8,6 +8,11 @@
     background-color: var(--hero-bg);
     color: var(--hero-clr);
 
+    hr {
+        border-top: var(--hero-hr-border);
+        display: none;
+    }
+
     .heading {
         font-size: var(--hero-heading-fs);
         letter-spacing: var(--hero-heading-tracking);
@@ -53,6 +58,16 @@
         }
 
         .btn {
+            margin-right: auto;
+        }
+    }
+}
+
+@media (min-width: 90em) {
+    .hero {
+        hr {
+            display: block;
+            width: var(--hero-hr-width);
             margin-right: auto;
         }
     }
