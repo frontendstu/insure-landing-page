@@ -13,6 +13,7 @@
     font: var(--btn-font);
     letter-spacing: var(--btn-tracking);
     text-transform: var(--btn-case);
+    text-align: center;
 
     &[data-btn-style='on-dark'] {
         border-color: var(--btn-on-dark-border-clr);
