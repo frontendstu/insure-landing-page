@@ -49,6 +49,8 @@
     }
 
     &__menu {
+        z-index: 999 !important;
+
         &-items {
             --menu-gap: var(--header-menu-gap);
 
