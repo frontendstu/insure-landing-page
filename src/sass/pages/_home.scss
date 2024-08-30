@@ -1,1 +1,63 @@
 @use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Features                        */
+/* ------------------------------- */
+
+.features {
+    padding-block: var(--features-padding-block);
+    text-align: var(--features-text-align);
+
+    hr {
+        width: var(--features-hr-width);
+        margin-inline: auto;
+        border-top: var(--features-hr-border-top);
+    }
+
+    .heading {
+        margin-top: var(--features-heading-margin-top);
+        color: var(--features-heading-clr);
+        font-size: var(--features-heading-fs);
+        letter-spacing: var(--features-heading-tracking);
+        line-height: var(--features-heading-leading);
+    }
+
+    &__item {
+        .heading {
+            margin-top: var(--features-item-heading-margin-top);
+            font-size: var(--features-item-heading-fs);
+            letter-spacing: var(--features-item-heading-tracking);
+        }
+
+        img {
+            margin-inline: auto;
+        }
+
+        p {
+            margin-top: var(--features-item-content-margin-top);
+        }
+    }
+
+    &__grid {
+        @include mixin.grid(
+            $columns: var(--features-grid-cols),
+            $gap: var(--features-grid-cols-gap)
+        );
+
+        margin-top: var(--features-grid-margin-top);
+    }
+}
+
+@media (min-width: 90em) {
+    .features {
+        hr {
+            margin-inline: inherit;
+        }
+
+        &__item {
+            img {
+                margin-inline: inherit;
+            }
+        }
+    }
+}
