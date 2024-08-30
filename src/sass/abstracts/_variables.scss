@@ -123,6 +123,30 @@
     --header-menu-items-tracking: 1.36px;
     --header-menu-items-case: uppercase;
 
+    // ----- Footer
+    --footer-padding-block: 5.5rem;
+    --footer-margin-top: 8.75rem;
+    --footer-bg: hsl(var(--clr-neutral-150));
+
+    --footer-hr-margin-block: 2.5rem;
+    --footer-hr-border-top: 1px solid hsl(0 0% 86%);
+
+    --footer-socials-gap: 1rem;
+    --footer-socials-margin-top: 2.125rem;
+    --footer-socials-transition: 200ms ease-in-out fill;
+    --footer-socials-fill: hsl(var(--clr-neutral-500));
+    --footer-socials-fill-active: hsl(var(--clr-neutral-800));
+
+    --footer-links-gap: 2.5rem;
+    --footer-links-fw: var(--fw-bold);
+    --footer-links-fs: var(--fs-100);
+    --footer-links-tracking: 1.5px;
+    --footer-links-text-align: center;
+    --footer-links-case: uppercase;
+    --footer-links-link-clr: hsl(var(--clr-neutral-800));
+    --footer-links-link-decoration: none;
+    --footer-links-link-decoration-active: underline;
+
     // ---------- PAGES
 
     // ----- Home
@@ -174,6 +198,8 @@
         --hero-content-max-width: 25rem;
         --hero-content-padding: 5.8125rem 2rem;
         --hero-content-text-align: left;
+
+        --footer-socials-margin-top: 0;
     }
 
     // ----- 1440px
@@ -201,5 +227,7 @@
         --cta-content-text-align: left;
         --cta-heading-max-width: 29.6875rem;
         --cta-heading-tracking: -0.78px;
+
+        --footer-links-text-align: left;
     }
 }
