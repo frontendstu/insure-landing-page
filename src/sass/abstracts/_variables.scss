@@ -93,6 +93,19 @@
     --hero-content-padding: 5.8125rem 0;
     --hero-content-text-align: center;
 
+    // ----- Call to Action
+    --cta-bg: hsl(var(--clr-primary));
+    --cta-clr: hsl(var(--clr-neutral-100));
+
+    --cta-content-gap: 2.5rem;
+    --cta-content-max-width: 17.4375rem;
+    --cta-content-padding: 4.5rem 1.5rem;
+    --cta-content-text-align: center;
+
+    --cta-heading-fs: var(--fs-500);
+    --cta-heading-tracking: var(-0.56px);
+    --cta-heading-leading: 1;
+
     // ---------- LAYOUT
 
     // ----- Header
@@ -182,5 +195,11 @@
         --features-heading-leading: 1;
         --features-grid-cols: 3;
         --features-grid-cols-gap: 1.875rem;
+
+        --cta-content-max-width: 59.3125rem;
+        --cta-content-padding: 4.3125rem 0.5rem;
+        --cta-content-text-align: left;
+        --cta-heading-max-width: 29.6875rem;
+        --cta-heading-tracking: -0.78px;
     }
 }
