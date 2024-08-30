@@ -110,6 +110,31 @@
     --header-menu-items-tracking: 1.36px;
     --header-menu-items-case: uppercase;
 
+    // ---------- PAGES
+
+    // ----- Home
+
+    // --- Features
+    --features-padding-block: 8.75rem;
+    --features-text-align: center;
+
+    --features-hr-width: 9.375rem;
+    --features-hr-border-top: 1px solid hsl(296 30% 68%);
+
+    --features-heading-margin-top: 2.5rem;
+    --features-heading-clr: hsl(var(--clr-neutral-800));
+    --features-heading-fs: var(--fs-600);
+    --features-heading-tracking: -0.67px;
+
+    --features-grid-cols: 1;
+    --features-grid-cols-gap: 3.5rem;
+    --features-grid-margin-top: 5rem;
+
+    --features-item-heading-margin-top: 2rem;
+    --features-item-heading-fs: var(--fs-400);
+    --features-item-heading-tracking: -0.39px;
+    --features-item-content-margin-top: 1rem;
+
     // ---------- MEDIA QUERIES
 
     // < 768px
@@ -150,5 +175,12 @@
         --hero-img-pos-top: 6.5625rem;
         --hero-content-max-width: 33.5rem;
         --hero-content-padding: 5.8125rem 0;
+
+        --features-padding-block: 19rem 9.875rem;
+        --features-text-align: left;
+        --features-heading-tracking: -1px;
+        --features-heading-leading: 1;
+        --features-grid-cols: 3;
+        --features-grid-cols-gap: 1.875rem;
     }
 }
