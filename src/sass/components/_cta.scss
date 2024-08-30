@@ -1,1 +1,38 @@
 @use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Call to Action                  */
+/* ------------------------------- */
+
+.cta {
+    background-color: var(--cta-bg);
+    color: var(--cta-clr);
+
+    &__content {
+        @include mixin.flex($gap: var(--cta-content-gap));
+
+        max-width: var(--cta-content-max-width);
+        padding: var(--cta-content-padding);
+        margin-inline: auto;
+        text-align: var(--cta-content-text-align);
+
+        .heading {
+            max-width: var(--cta-heading-max-width);
+            font-size: var(--cta-heading-fs);
+            letter-spacing: var(--cta-heading-tracking);
+            line-height: var(--cta-heading-leading);
+        }
+    }
+}
+
+@media (min-width: 90em) {
+    .cta {
+        &__content {
+            flex-direction: row;
+
+            .heading {
+                margin-right: auto;
+            }
+        }
+    }
+}
