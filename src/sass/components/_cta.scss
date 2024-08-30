@@ -25,11 +25,17 @@
     }
 }
 
-@media (min-width: 90em) {
+@media (min-width: 48em) {
     .cta {
         &__content {
             flex-direction: row;
+        }
+    }
+}
 
+@media (min-width: 90em) {
+    .cta {
+        &__content {
             .heading {
                 margin-right: auto;
             }
