@@ -132,6 +132,9 @@
     --footer-padding-block: 5.5rem;
     --footer-margin-top: 8.75rem;
     --footer-bg: hsl(var(--clr-neutral-150));
+    --footer-bg-img-width: 100%;
+    --footer-bg-img-height: 11rem;
+    --footer-bg-img-url: url('../assets/images/bg-pattern-footer-mobile.svg');
 
     --footer-hr-margin-block: 2.5rem;
     --footer-hr-border-top: 1px solid hsl(0 0% 86%);
@@ -213,6 +216,9 @@
         --cta-content-max-width: 100%;
         --cta-content-text-align: left;
 
+        --footer-bg-img-width: 33.0625rem;
+        --footer-bg-img-height: 14.5625rem;
+        --footer-bg-img-url: url('../assets/images/bg-pattern-footer-desktop.svg');
         --footer-socials-margin-top: 0;
     }
 
