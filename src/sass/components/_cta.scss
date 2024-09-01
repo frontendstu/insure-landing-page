@@ -5,8 +5,10 @@
 /* ------------------------------- */
 
 .cta {
+    position: relative;
     background-color: var(--cta-bg);
     color: var(--cta-clr);
+    z-index: 999 !important;
 
     &__content {
         @include mixin.flex($gap: var(--cta-content-gap));
@@ -21,7 +23,29 @@
             font-size: var(--cta-heading-fs);
             letter-spacing: var(--cta-heading-tracking);
             line-height: var(--cta-heading-leading);
+            z-index: 999;
         }
+
+        .btn {
+            z-index: 999;
+        }
+    }
+
+    &::after {
+        @include mixin.bg-img(
+            $bg-url: var(--cta-bg-img-url),
+            $bg-size: contain
+        );
+        @include mixin.size(
+            $width: var(--cta-bg-img-width),
+            $height: var(--cta-bg-img-height)
+        );
+        @include mixin.pos-absolute(
+            $pos-top: var(--cta-bg-img-pos-top),
+            $pos-right: var(--cta-bg-img-pos-right)
+        );
+
+        content: '';
     }
 }
 
