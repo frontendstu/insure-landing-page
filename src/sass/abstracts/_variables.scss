@@ -96,6 +96,11 @@
     // ----- Call to Action
     --cta-bg: hsl(var(--clr-primary));
     --cta-clr: hsl(var(--clr-neutral-100));
+    --cta-bg-img-pos-top: 0;
+    --cta-bg-img-pos-right: -0.15rem;
+    --cta-bg-img-width: 11.125rem;
+    --cta-bg-img-height: 19.6875rem;
+    --cta-bg-img-url: url('../assets/images/bg-pattern-how-we-work-mobile.svg');
 
     --cta-content-gap: 2.5rem;
     --cta-content-max-width: 17.4375rem;
@@ -199,6 +204,11 @@
         --hero-content-padding: 5.8125rem 2rem;
         --hero-content-text-align: left;
 
+        --cta-bg-img-pos-top: 0;
+        --cta-bg-img-pos-right: 0;
+        --cta-bg-img-width: 24.25rem;
+        --cta-bg-img-height: 15.625rem;
+        --cta-bg-img-url: url('../assets/images/bg-pattern-how-we-work-desktop.svg');
         --cta-content-gap: 1rem;
         --cta-content-max-width: 100%;
         --cta-content-text-align: left;
@@ -226,6 +236,8 @@
         --features-grid-cols: 3;
         --features-grid-cols-gap: 1.875rem;
 
+        --cta-bg-img-width: 27.1875rem;
+        --cta-bg-img-height: 15.625rem;
         --cta-content-max-width: 59.3125rem;
         --cta-content-padding: 4.3125rem 0.5rem;
         --cta-content-text-align: left;
