@@ -5,12 +5,17 @@
 /* ------------------------------- */
 
 .footer {
+    position: relative;
     padding-block: var(--footer-padding-block);
     margin-top: var(--footer-margin-top);
     background-color: var(--footer-bg);
 
-    &__branding img {
-        margin-inline: auto;
+    &__branding {
+        z-index: 999;
+
+        img {
+            margin-inline: auto;
+        }
     }
 
     hr {
@@ -26,6 +31,7 @@
         @include mixin.flex($direction: row, $gap: var(--footer-socials-gap));
 
         margin-top: var(--footer-socials-margin-top);
+        z-index: 999;
 
         svg {
             transition: var(--footer-socials-transition);
@@ -47,6 +53,7 @@
         text-transform: var(--footer-links-case);
 
         a {
+            z-index: 999;
             color: hsl(var(--clr-neutral-800));
             text-decoration: var(--footer-links-link-decoration);
 
@@ -54,6 +61,18 @@
                 text-decoration: var(--footer-links-link-decoration-active);
             }
         }
+    }
+
+    &::before {
+        @include mixin.bg-img($bg-url: var(--footer-bg-img-url));
+        @include mixin.size(
+            $width: var(--footer-bg-img-width),
+            $height: var(--footer-bg-img-height)
+        );
+        @include mixin.pos-absolute($pos-top: 0, $pos-left: 0);
+
+        content: '';
+        z-index: 0;
     }
 }
 
