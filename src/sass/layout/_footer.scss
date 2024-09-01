@@ -74,6 +74,21 @@
         content: '';
         z-index: 0;
     }
+
+    &__attribution {
+        margin-top: var(--footer-attribution-margin-top);
+        color: var(--footer-attribution-clr);
+        font-size: var(--footer-attribution-fs);
+        text-align: var(--footer-attribution-text-align);
+
+        a {
+            color: var(--footer-attribution-link-clr);
+
+            @include mixin.hover {
+                color: var(--footer-attribution-link-clr-active);
+            }
+        }
+    }
 }
 
 @media (min-width: 48em) {
