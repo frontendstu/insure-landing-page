@@ -84,6 +84,10 @@
     --hero-hr-width: 9.375rem;
     --hero-hr-border: 1px solid hsl(var(--clr-neutral-100));
 
+    --hero-bg-img-left-width: 10.625rem;
+    --hero-bg-img-left-height: 10.25rem;
+    --hero-bg-img-left-url: url('../assets/images/bg-pattern-intro-left-mobile.svg');
+
     --hero-heading-fs: var(--fs-600);
     --hero-heading-tracking: -0.67px;
     --hero-heading-leading: 1;
@@ -214,6 +218,9 @@
         --hero-content-max-width: 25rem;
         --hero-content-padding: 5.8125rem 2rem;
         --hero-content-text-align: left;
+        --hero-bg-img-left-width: 12.125rem;
+        --hero-bg-img-left-height: 31.25rem;
+        --hero-bg-img-left-url: url('../assets/images/bg-pattern-intro-left-desktop.svg');
 
         --cta-bg-img-pos-top: 0;
         --cta-bg-img-pos-right: 0;
