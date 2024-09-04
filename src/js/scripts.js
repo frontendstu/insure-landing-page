@@ -6,7 +6,7 @@ console.log('Hello, World!');
 
 document.addEventListener('DOMContentLoaded', function () {
     const headerMenuToggle = document.querySelector('.header__toggle');
-    const headerMenuNav = document.querySelector('#header-nav');
+    const headerMenuNav = document.querySelector('.header__menu');
     const btn = document.querySelector('.header__menu .btn');
     const body = document.body; // Reference to the body element
 
