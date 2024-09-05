@@ -5,6 +5,7 @@
 /* ------------------------------- */
 
 .hero {
+    position: relative;
     background-color: var(--hero-bg);
     color: var(--hero-clr);
 
@@ -45,6 +46,21 @@
             @include mixin.bg-img($bg-url: var(--hero-bg-img-left-url));
             @include mixin.pos-absolute($pos-top: 0, $pos-left: -3.25rem);
         }
+
+        &::after {
+            @include mixin.size(
+                $width: var(--hero-bg-img-right-width),
+                $height: var(--hero-bg-img-right-height)
+            );
+            @include mixin.bg-img(
+                $bg-url: var(--hero-bg-img-right-url),
+                $bg-size: fill
+            );
+            @include mixin.pos-absolute(
+                $pos-top: 22.625rem,
+                $pos-right: -3.25rem
+            );
+        }
     }
 }
 
@@ -77,6 +93,12 @@
             &::before {
                 top: 20rem;
             }
+
+            &::after {
+                top: -4.875rem;
+                right: -35rem;
+                background-size: contain;
+            }
         }
 
         .btn {
@@ -98,6 +120,12 @@
             &::before {
                 top: 20rem;
                 left: -11rem;
+            }
+
+            &::after {
+                top: -3.125rem;
+                right: -50rem;
+                background-size: contain;
             }
         }
     }
