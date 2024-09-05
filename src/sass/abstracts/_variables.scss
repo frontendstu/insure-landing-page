@@ -88,6 +88,10 @@
     --hero-bg-img-left-height: 10.25rem;
     --hero-bg-img-left-url: url('../assets/images/bg-pattern-intro-left-mobile.svg');
 
+    --hero-bg-img-right-width: 7.75rem;
+    --hero-bg-img-right-height: 54.75rem;
+    --hero-bg-img-right-url: url('../assets/images/bg-pattern-intro-right-mobile.svg');
+
     --hero-heading-fs: var(--fs-600);
     --hero-heading-tracking: -0.67px;
     --hero-heading-leading: 1;
@@ -221,6 +225,9 @@
         --hero-bg-img-left-width: 12.125rem;
         --hero-bg-img-left-height: 31.25rem;
         --hero-bg-img-left-url: url('../assets/images/bg-pattern-intro-left-desktop.svg');
+        --hero-bg-img-right-width: 27.125rem;
+        --hero-bg-img-right-height: 54.75rem;
+        --hero-bg-img-right-url: url('../assets/images/bg-pattern-intro-right-desktop.svg');
 
         --cta-bg-img-pos-top: 0;
         --cta-bg-img-pos-right: 0;
